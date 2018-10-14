@@ -18,9 +18,7 @@ class Rat{
 	d=1; 
 	}
 
-
  // 2 parameter constructor
-
  Rat(int i, int j){ 
 	n=i; 
     d=j; 
