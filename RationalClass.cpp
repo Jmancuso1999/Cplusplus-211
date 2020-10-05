@@ -31,8 +31,8 @@ class Rat{
     d=1; 
  }
  //accessor functions (usually called get() and set(...) ) 
- int getN(){ return n;} 
- int getD(){ return d;} 
+ int getN(){ return n;} //get numerator
+ int getD(){ return d;} //get denominator
  
  void setN(int i){ n=i;} 
  void setD(int i){ d=i;}
@@ -101,7 +101,7 @@ class Rat{
  void simplify(Rat &r) {
   //pass by reference because we want r to be changed.   
    int x = r.gcd(r.getN(), r.getD()); //gets the greatest common factor
-   r.n = r.n / x; //once gcd is solved for, we can simplify both the numeirator and denominators   
+   r.n = r.n / x; //once gcd is solved for, we can simplify both the numerator and denominators   
    r.d = r.d / x;   
  } 
 
